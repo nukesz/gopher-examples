@@ -65,3 +65,18 @@ If you want to assign a new value, you need to use `=` only:
 code := 1234
 code = 4567
 ```
+
+### Assigning multiple variables
+
+You can create multiple variables using `:=` on the same line:
+
+```go
+code, password := 1234, "admin"
+```
+
+This format can be used to assign a new value to an existing variable, as long there at least one new variable on the left hand side:
+
+```go
+oldVariable := "I'm old"
+code, oldVariable := 1234, "I'm not that old"
+```
